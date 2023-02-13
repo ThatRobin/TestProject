@@ -60,19 +60,15 @@ public class PlayerAttack : MonoBehaviour {
                 }
             } else if(weapon.Equals(Weapon.Bow)) {
                 GameObject arrow = Instantiate(weaponPrefab, pofTransform.position, Quaternion.identity);
-
-                
                 if (perspective.GetPerspective().Equals(SwitchPerspective.Perspective.First)) {
                     arrow.transform.rotation = cameraTransform.rotation;
-                    Rigidbody rb = arrow.GetComponent<Rigidbody>();
-                    rb.velocity = cameraTransform.forward * speed;
                 } else {
                     arrow.transform.rotation = this.transform.rotation;
-                    Rigidbody rb = arrow.GetComponent<Rigidbody>();
-                    rb.velocity = pofTransform.forward * speed;
                 }
+                Rigidbody rb = arrow.GetComponent<Rigidbody>();
+                rb.velocity = pofTransform.forward * speed;
 
-                
+
             }
             
         }
