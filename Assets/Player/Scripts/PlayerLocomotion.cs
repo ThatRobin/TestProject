@@ -21,7 +21,6 @@ public class PlayerLocomotion : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
         characterController = GetComponent<CharacterController>();
         SetCurrentCamera();
     }
