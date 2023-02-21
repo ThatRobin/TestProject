@@ -1618,6 +1618,10 @@ PrefabInstance:
       propertyPath: itemPrefab
       value: 
       objectReference: {fileID: 1334362001674699272, guid: 85e9b2e10f6324249b217f205b52d195, type: 3}
+    - target: {fileID: 3299521454061675483, guid: 85e9b2e10f6324249b217f205b52d195, type: 3}
+      propertyPath: isPickupOnCollision
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3764568950458748452, guid: 85e9b2e10f6324249b217f205b52d195, type: 3}
       propertyPath: m_RootOrder
       value: 4
